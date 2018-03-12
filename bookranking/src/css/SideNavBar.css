@@ -1,0 +1,90 @@
+body, .NavHeader, .NavFooter{
+    transition: background-color .5s;
+    /* background-color: rgba(0,0,0,0.5); */
+}
+
+.sidenav {
+    width: 315px;
+    background-color: #142954;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    transition: 0.5s;
+    padding-top: 30px;
+    top: 0;    
+}
+
+.spanOpen{
+    font-size:30px;
+    cursor:pointer;
+    position: absolute;
+    left: 30px;
+    top: 200px;
+}
+
+.sidenav ul{
+    margin-top: 50px;
+}
+
+.sidenav *{
+    list-style-type: none;
+    text-align: left;
+    left: 0;
+}
+
+.sidenav .closebtn{
+    top: 5px !important;
+    margin-left: 260px !important;
+    cursor: pointer;
+}
+
+.sidenav img{
+    width: 30px;
+}
+
+.sidenav li{
+    padding: 5px 0 5px 0px;
+}
+
+.sidenav a {
+    font-size: 22px;
+    cursor: pointer;
+    color: white;
+    padding-left: 10px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+.sidenav a:hover {
+    color: lightblue;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav-footer{
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}

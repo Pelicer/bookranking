@@ -1,0 +1,19 @@
+.section-header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.NavHeader {
+    text-align: center;
+}
+
+.NavHeader-logo {
+    height: 80px;
+}
+
+.NavHeader-title {
+    font-size: 1.5em;
+}

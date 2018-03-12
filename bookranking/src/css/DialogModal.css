@@ -1,0 +1,31 @@
+.Modal{
+    position: 'fixed';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 50;
+}
+
+.Modal-body{
+    background-color: #fff;
+    border-radius: 5;
+    max-width: 500;
+    min-height: 300;
+    margin: '0 auto';
+    padding: 30;
+}
+
+.sucess-message {
+    color: green;
+    font-size: 16px;
+}
+
+.error-message{
+    color: red;
+    font-size: 16px;
+}
+
+b{
+    color: #142954;
+}

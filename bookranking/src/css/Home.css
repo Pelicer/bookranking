@@ -1,0 +1,59 @@
+.Home {
+  text-align: center;
+}
+
+.Home-logo {
+  height: 80px;
+}
+
+.Home-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.Home-title {
+  font-size: 1.5em;
+}
+
+h2 {
+  color: #142954;
+  text-transform: uppercase;
+}
+
+input {
+  width: 500px;
+  height: 30px;
+  padding-left: 10px;
+  font-size: medium;
+  text-align: center;
+  border-top: none;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+input:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+button {
+  margin-top: 20px;
+  font-size: large;
+  text-transform: uppercase;
+  background-color: #142954;
+  color: white;
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+button:hover {
+  border: 1px solid #142954;
+  background-color: white;
+  color: #142954;
+  cursor: pointer;
+}
