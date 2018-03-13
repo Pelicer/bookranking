@@ -104,34 +104,36 @@ class Home extends Component {
             //Código da home
             <div className = "Home">
 
-                <NavHeader/>
-                <SideNavBar/>
+                <SideNavBar />
+                <div className = "Home-body">
+                    <NavHeader />
 
-                <h2>{this.state.bestBook + this.state.rank}</h2>
+                    <h2>{this.state.bestBook + this.state.rank}</h2>
 
-                <h3>
-                    {
-                        this.state.asoiaf.map(asoiaf => {
-                            return (                                
-                                <div key={asoiaf.title}>{asoiaf.title}</div>
-                            )
-                        })
-                    }
-                </h3>
+                    <h3>
+                        {
+                            this.state.asoiaf.map(asoiaf => {
+                                return (
+                                    <div key={asoiaf.title}>{asoiaf.title}</div>
+                                )
+                            })
+                        }
+                    </h3>
 
-                <form onSubmit={this.onSubmit}>
-                    <input placeholder='Which one?' ref={input => this.input = input} /><br />
-                    <button type="submit">Tell us</button>
-                </form>
+                    <form onSubmit={this.onSubmit}>
+                        <input placeholder='Which one?' ref={input => this.input = input} /><br />
+                        <button type="submit">Tell us</button>
+                    </form>
 
-                <DialogModal
-                    show={this.state.openDialog}
-                    onClose={this.modalOpened}
-                    messageSucess={this.state.messageSucess}
-                    bestBook={this.state.bestBook}
-                />
+                    <DialogModal
+                        show={this.state.openDialog}
+                        onClose={this.modalOpened}
+                        messageSucess={this.state.messageSucess}
+                        bestBook={this.state.bestBook}
+                    />
 
-                <NavFooter/>
+                    <NavFooter />
+                </div>               
 
             </div>
         );

@@ -1,6 +1,6 @@
-body, .NavHeader, .NavFooter{
+.Home-body{
     transition: background-color .5s;
-    /* background-color: rgba(0,0,0,0.5); */
+    transition: margin-left .5s;
 }
 
 .sidenav {
@@ -12,6 +12,10 @@ body, .NavHeader, .NavFooter{
     transition: 0.5s;
     padding-top: 30px;
     top: 0;    
+}
+
+.sidenav-wrap{
+    visibility: hidden;
 }
 
 .spanOpen{
@@ -81,19 +85,6 @@ body, .NavHeader, .NavFooter{
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-}
-
-.sidenav-footer{
-    position: absolute;
-    bottom: 40px;
-    width: 100%;
-    text-align: center;
-    color: white;
-}
-
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
 }
 
 @media screen and (max-height: 450px) {
