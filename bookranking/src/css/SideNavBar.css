@@ -4,7 +4,7 @@ body, .NavHeader, .NavFooter{
 }
 
 .sidenav {
-    width: 315px;
+    width: 0px;
     background-color: #142954;
     height: 100%;
     position: fixed;

@@ -10,9 +10,9 @@ const SideNavBar = () =>{
     return(
         <Router>
             <div>
-                <span className="spanOpen" onClick={utils.openNav()}>&#9776;</span>
+                <span className="spanOpen" onClick={() => utils.openNav()}>&#9776;</span>
                 <div className="sidenav">
-                    <a className='closebtn' onClick={utils.closeNav()}>&times;</a>
+                    <a className='closebtn' onClick={() => utils.closeNav()}>&times;</a>
                     <ul>
                         <li>
                             <Link to='/'><img src={home} alt='Home' /><span className='h-item'>Home</span></Link>
