@@ -55,6 +55,22 @@ body, .NavHeader, .NavFooter{
     text-decoration: none;
 }
 
+.sidenav a span{
+    padding-left: 10px;
+}
+
+.sidenav .h-item{
+    position: absolute;
+    left: 80px;
+    top: 88px;
+}
+
+.sidenav .b-item{
+    position: absolute;
+    left: 80px;
+    top: 135px;
+}
+
 .sidenav a:hover {
     color: lightblue;
 }

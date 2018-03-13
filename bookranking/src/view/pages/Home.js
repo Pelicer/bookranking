@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import NavHeader from './NavHeader';
-import NavFooter from './NavFooter';
-import DialogModal from './DialogModal';
-import SideNavBar from './SideNavBar';
-import './css/Home.css';
+import NavHeader from '../../components/layout/NavHeader';
+import NavFooter from '../../components/layout/NavFooter';
+import SideNavBar from '../../components/layout/SideNavBar';
+import DialogModal from '../../components/dialogs/DialogModal';
+import '../../css/Home.css';
 
 //Vector that will be then used to create the database.
 const asoiaf = [
@@ -113,7 +113,7 @@ class Home extends Component {
                     {
                         this.state.asoiaf.map(asoiaf => {
                             return (                                
-                                <div key={asoiaf}>{asoiaf.title}</div>
+                                <div key={asoiaf.title}>{asoiaf.title}</div>
                             )
                         })
                     }

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './css/DialogModal.css';
+import '../../css/DialogModal.css';
 
 class DialogModal extends React.Component {
     render() {

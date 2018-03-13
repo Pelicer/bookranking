@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import facebook from './image/sm-icon/white/facebook.png';
-import instagram from './image/sm-icon/white/instagram.png';
-import twitter from './image/sm-icon/white/twitter.png';
-import './css/NavFooter.css';
+import facebook from '../../image/sm-icon/white/facebook.png';
+import instagram from '../../image/sm-icon/white/instagram.png';
+import twitter from '../../image/sm-icon/white/twitter.png';
+import '../../css/NavFooter.css';
 
 class NavFooter extends Component {
     render() {

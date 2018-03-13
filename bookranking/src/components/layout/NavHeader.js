@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import crown from './image/crown.png';
-import './css/NavHeader.css';
+import crown from '../../image/crown.png';
+import '../../css/NavHeader.css';
 
 class NavHeader extends Component {
     render() {
