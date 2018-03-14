@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import NavHeader from '../../components/layout/NavHeader';
-import NavFooter from '../../components/layout/NavFooter';
-import SideNavBar from '../../components/layout/SideNavBar';
 import DialogModal from '../../components/dialogs/DialogModal';
 import '../../css/Home.css';
 
@@ -9,22 +6,27 @@ import '../../css/Home.css';
 const asoiaf = [
     {
         index: 1,
-        title: 'A Song of Ice and Fire: Game of Thrones'
+        series: 'A Song of Ice and Fire',
+        title: 'Game of Thrones'
     },
     {
         index: 2,
-        title: 'A Song of Ice and Fire: Clash of Kings'
+        series: 'A Song of Ice and Fire',
+        title: 'Clash of Kings'
     },
     {
         index: 3,
-        title: 'A Song of Ice and Fire: Storm of Swords'
+        series: 'A Song of Ice and Fire',
+        title: 'Storm of Swords'
     },
     {
         index: 4,
-        title: 'A Song of Ice and Fire: A Feast of Crows'
+        series: 'A Song of Ice and Fire',
+        title: 'A Feast of Crows'
     },{
         index: 5,
-        title: 'A Song of Ice and Fire: A Dance With Dragons'
+        series: 'A Song of Ice and Fire',
+        title: 'A Dance With Dragons'
     }
 ];
 
@@ -104,9 +106,7 @@ class Home extends Component {
             //Código da home
             <div className = "Home">
 
-                <SideNavBar />
-                <div className = "Home-body">
-                    <NavHeader />
+                <div className = "body-wrapper">
 
                     <h2>{this.state.bestBook + this.state.rank}</h2>
 
@@ -132,7 +132,6 @@ class Home extends Component {
                         bestBook={this.state.bestBook}
                     />
 
-                    <NavFooter />
                 </div>               
 
             </div>

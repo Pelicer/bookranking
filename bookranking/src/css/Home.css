@@ -56,4 +56,5 @@ button:hover {
   background-color: white;
   color: #142954;
   cursor: pointer;
+  transition: background-color .3s;
 }

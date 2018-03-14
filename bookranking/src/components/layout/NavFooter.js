@@ -14,7 +14,7 @@ class NavFooter extends Component {
                         Pelicer &copy; 2018 
                     </p>
                     <p>Thanks for being a beta tester!</p>
-                    <p>                       
+                    <p className="sm-icons">                       
                        <a href="facebook.com"><img src={facebook} alt='Our Facebook page'/></a>
                        <a href="instagram.com"><img src={instagram} alt='Our Instagram page'/></a>
                        <a href="twitter.com"><img src={twitter} alt='Our Twitter account'/></a>
