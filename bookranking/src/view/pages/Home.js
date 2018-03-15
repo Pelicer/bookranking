@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import DialogModal from '../../components/dialogs/DialogModal';
+import DialogModal from '../../js/components/dialogs/DialogModal';
 import '../../css/Home.css';
 
 //Vector that will be then used to create the database.
@@ -121,7 +121,7 @@ class Home extends Component {
                     </h3>
 
                     <form onSubmit={this.onSubmit}>
-                        <input placeholder='Which one?' ref={input => this.input = input} /><br />
+                        <input className="home-input" placeholder='Which one?' ref={input => this.input = input} /><br />
                         <button type="submit">Tell us</button>
                     </form>
 

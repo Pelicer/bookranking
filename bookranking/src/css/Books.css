@@ -8,6 +8,7 @@
     font-size: small;
     width: auto;
     height: auto;
+    margin: 5px;
 }
 
 .btn-action:hover {
@@ -17,13 +18,13 @@
 }
 
 input{
-    width: auto !important;
-    height: auto !important;
-    padding-left: 5px !important;
-    font-size: small !important;
-    text-align: left !important;
-    border: 1px solid lightgray !important;
-    margin-right: 5px !important;
+    width: auto;
+    height: auto;
+    padding-left: 5px;
+    font-size: small;
+    text-align: left;
+    border: 1px solid lightgray;
+    margin-right: 5px;
 }
 
 hr{
@@ -39,12 +40,8 @@ hr{
     background-color: rgba(20, 41, 84, 0.2);
 }
 
-.tr-book{
-    width: 100%;
-}
-.tr-book th{
+.tr-book th, td{
     width: 25%;
-    margin-top: 5px;
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;

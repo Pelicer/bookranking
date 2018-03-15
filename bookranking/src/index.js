@@ -1,10 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import {createStore} from 'redux';
+import {Provider} from 'react-redux';
+import allReducers from './js/reducers'
+
 import './css/index.css';
-import Books from './view/pages/Books';
 import registerServiceWorker from './registerServiceWorker';
 import Layout from './view/shared/_layout';
 
-ReactDOM.render(<Layout/>, document.getElementById('layout'));
-ReactDOM.render(<Books />, document.getElementById('books'));
+const store = createStore(allReducers);
+
+ReactDOM.render(
+    <Provider store={store}>
+        <Layout/>
+    </Provider>, 
+    document.getElementById('layout'));
 registerServiceWorker();
