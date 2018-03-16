@@ -5,6 +5,11 @@ import Create from '../../js/components/crud/books/Create'
 import '../../css/Books.css'
 
 class Books extends Component {
+
+    componentDidMomunt(){
+        this.props.fetchBooks();
+    }
+
     render() {
         return (
             <div className="Books">
@@ -17,7 +22,7 @@ class Books extends Component {
                         </div>
                         <div className="col-lg-12">
                             <div>
-                                <BookList/>
+                                <BookList books={this.props.books}/>
                             </div>
                         </div>
                     </div>
@@ -28,7 +33,7 @@ class Books extends Component {
 }
 
 function mapStateToProps(state) {
-    return {
+    return {    
         books: state.books
     }
 }

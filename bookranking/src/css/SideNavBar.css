@@ -3,19 +3,20 @@
 .ft-hd,
 .sm-icons,
 span {
-    transition: background-color .5s;
-    transition: margin-left .5s;
+    transition: background-color .2s;
+    transition: margin-left .2s;
 }
 
 .sidenav {
-    width: 70px;
+    width: 60px;
     background-color: #142954;
     height: 100%;
     position: fixed;
     z-index: 1;
     transition: 0.5s;
     padding-top: 30px;
-    top: 0;    
+    top: 0;
+    overflow-x: hidden;
 }
 
 .sidenav-wrap{
@@ -31,11 +32,10 @@ span {
     top: 40px;
 }
 
+
 .sidenav *{
     list-style-type: none;
     text-align: left;
-    left: 0;
-    margin-left: -8px;
 }
 
 .sidenav .closebtn{
@@ -45,13 +45,24 @@ span {
 }
 
 .sidenav img{
-    width: 30px;
+    width: 20px;
+}
+
+.routes-list{
+    margin-left: -30px;
+    margin-right: 10px;
 }
 
 .sidenav li{
     padding: 5px 0 5px 0px;
+    background-color: #23458C;
+    margin-bottom: 5px;
 }
 
+.sidenav li:hover{
+    cursor: pointer;
+    border-left: 2px solid white;
+}
 .sidenav a {
     font-size: 22px;
     cursor: pointer;
@@ -67,22 +78,30 @@ span {
 
 .sidenav .h-item{
     position: absolute;
-    visibility: hidden;
-    left: 180px;
-    top: 4 3px;
-    font-size: 16px;
+    left: 160px;
+    top: 41px;
+    font-size: 14px;
+}
+
+.sidenav .h-item img{
+    width: 10px;
+    position: absolute;
+    top: 6px;
+    left: -45px;
 }
 
 .sidenav .b-item{
     position: absolute;
-    visibility: hidden;
-    left: 180px;
+    left: 160px;
     top: 83px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
-.sidenav a:hover {
-    color: lightblue;
+.sidenav .b-item img{
+    width: 10px;
+    position: absolute;
+    top: 6px;
+    left: -45px;
 }
 
 .sidenav .closebtn {
@@ -92,7 +111,6 @@ span {
     font-size: 36px;
     margin-left: 50px;
 }
-
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;

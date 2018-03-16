@@ -8,7 +8,7 @@ class Create extends Component {
 
         return (
             <form onSubmit = {() => addBook(this.props.books)}>
-                <input placeholder="Index" ref={indexInput => this.indexInput = indexInput}/>
+                <input placeholder="Volume" ref={indexInput => this.indexInput = indexInput}/>
                 <input placeholder="Series" ref={seriesInput => this.seriesInput = seriesInput}/>
                 <input placeholder="Title" ref={titleInput => this.titleInput = titleInput}/>
                 <button onClick={() => addBook(this.props.books)} className="btn-action"> Register</button>

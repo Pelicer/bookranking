@@ -6,18 +6,17 @@ import {connect} from 'react-redux';
 
 class BookList extends Component {
 
-    listBooks(){
-
+    listBooks() {
         return this.props.books.map((books) => {
-            return(
+            return (
                 <tbody key={books.title}>
                     <tr className="tr-book">
                         <td>{books.series}</td>
                         <td>{books.title}</td>
                         <td>Vol. {books.volume}</td>
                         <td>
-                            <button onClick={() => deleteBook(books)}className="btn-action">Delete</button>
-                            <button onClick={() => editBook(books)}className="btn-action">Update</button>
+                            <button onClick={() => deleteBook(books.id)} className="btn-action">Delete</button>
+                            <button onClick={() => editBook(this.props.books)} className="btn-action">Update</button>
                         </td>
                     </tr>
                 </tbody>
@@ -26,23 +25,14 @@ class BookList extends Component {
     }
 
     render() {
-
         return (
             <table>
                 <tbody className="tb-book">
                     <tr className="tr-book">
-                        <th>
-                            Series
-                    </th>
-                        <th>
-                            Title
-                    </th>
-                        <th>
-                            Volume
-                    </th>
-                        <th>
-                            Actions
-                    </th>
+                        <th>Series</th>
+                        <th>Title</th>
+                        <th>Volume</th>
+                        <th>Actions</th>
                     </tr>
                 </tbody>
                 {this.listBooks()}
@@ -61,7 +51,8 @@ function mapStateToProps(state) {
 function matchDispatchToProps(dispatch){
     return bindActionCreators(
         {deleteBook: deleteBook}, 
-        {editBook: editBook}, dispatch)
+        {editBook: editBook}, 
+        dispatch)
 }
 
 export default connect(mapStateToProps, matchDispatchToProps)(BookList);

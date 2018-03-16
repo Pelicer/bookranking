@@ -17,6 +17,10 @@
     transition: background-color .3s;
 }
 
+.no-books-message{
+    font-style: italic;
+}
+
 input{
     width: auto;
     height: auto;
